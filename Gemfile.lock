@@ -91,6 +91,8 @@ GEM
     date (3.3.3)
     erubi (1.12.0)
     fancy_gets (0.1.10)
+    friendly_id (5.5.0)
+      activerecord (>= 4.0.0)
     globalid (1.1.0)
       activesupport (>= 5.0)
     i18n (1.13.0)
@@ -216,6 +218,7 @@ DEPENDENCIES
   bootsnap
   brick
   capybara
+  friendly_id
   importmap-rails
   jbuilder
   pg (~> 1.1)

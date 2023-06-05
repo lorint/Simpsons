@@ -1,0 +1,10 @@
+<%= form_for @job do |f| %>
+  <%= f.object.name %><br>
+  <%= f.fields_for :users, include_id: false do |f2| %>
+    <%= # Note that the only user ID in the form is their public_id:
+        f2.hidden_field :id, value: f2.object.public_id %>
+    <%= f2.object.name %> <%= f2.text_field :blurb %>
+    <hr>
+  <% end %>
+  <%= f.submit %>
+<% end %>
